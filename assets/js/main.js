@@ -4,7 +4,7 @@
  * Clean DOM manipulation without inline style injections
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+const initApp = () => {
   // Elements
   const header = document.querySelector('.header');
   const mobileToggle = document.getElementById('mobileToggle');
@@ -142,4 +142,41 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 800);
     });
   });
-});
+
+  // 6. Why Modular Slick Slider (One by one, auto slide, custom nav arrows)
+  if (typeof jQuery !== 'undefined' && typeof jQuery.fn.slick === 'function') {
+    const $slider = $('.why-modular-slider');
+    if ($slider.length) {
+      $slider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 600,
+        infinite: true,
+        fade: false,
+        dots: false,
+        arrows: false,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        adaptiveHeight: false
+      });
+
+      $(document).on('click', '.slider-prev-btn', function (e) {
+        e.preventDefault();
+        $('.why-modular-slider').slick('slickPrev');
+      });
+
+      $(document).on('click', '.slider-next-btn', function (e) {
+        e.preventDefault();
+        $('.why-modular-slider').slick('slickNext');
+      });
+    }
+  }
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}

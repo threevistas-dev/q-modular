@@ -7,63 +7,56 @@
   <title>Q Modular Sales and Leasing | Smart Modular Solutions. Experienced Leadership. Exceptional Service.</title>
   <meta name="description"
     content="Q Modular Sales and Leasing is a woman- and minority-owned modular building company built on more than 30 years of combined industry experience. Modular buildings and office solutions for sale and lease.">
-
-  <!-- Modern Geometric Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
     rel="stylesheet">
-
-  <!-- FontAwesome 6 Free CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Custom Corporate Stylesheet (Includes Bootstrap-Compatible Flex Grid System) -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./assets/css/slick.min.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
 
-  <!-- ==========================================================================
-       HEADER & NAVIGATION BAR
-       ========================================================================== -->
-  <header class="header">
-    <div class="container">
+  <header class="header header-split">
+    <div class="container header-container">
       <div class="header-inner">
-        <!-- Logo -->
-        <a href="#home" class="brand-logo-link" aria-label="Q Modular Sales and Leasing Home">
-          <img src="assets/images/logo.png" alt="Q Modular Sales and Leasing" class="brand-logo" width="712"
-            height="474">
-        </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="nav-desktop" aria-label="Main Navigation">
+        <nav class="nav-desktop nav-desktop-left" aria-label="Left Navigation">
           <a href="#home" class="nav-link active">Home</a>
           <a href="#about" class="nav-link">About Us</a>
           <a href="#commitment" class="nav-link">Our Commitment</a>
-          <a href="#why-q-modular" class="nav-link">Why Q Modular?</a>
-          <a href="#our-team" class="nav-link">Our Team</a>
           <a href="#why-modular" class="nav-link">Why Modular</a>
-          <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <a href="tel:8005550199" class="btn btn-primary header-phone-btn">
-            <i class="fa-solid fa-phone"></i> <span>(800) 555-0199</span>
-          </a>
-          <button class="mobile-toggle" id="mobileToggle" aria-label="Open mobile navigation menu"
-            aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+        <a href="#home" class="brand-logo-link brand-logo-center" aria-label="Q Modular Sales and Leasing Home">
+          <img src="assets/images/QModular-Logo-Color-Swapped.png" alt="Q Modular Sales and Leasing" class="brand-logo"
+            width="712" height="474">
+        </a>
+
+        <div class="header-right-group">
+          <nav class="nav-desktop nav-desktop-right" aria-label="Right Navigation">
+            <a href="#our-team" class="nav-link">Our Team</a>
+            <a href="#service" class="nav-link">Our Services</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
+          </nav>
+          <div class="header-actions">
+            <a href="tel:8005550199" class="btn btn-primary header-phone-btn">
+              <i class="fa-solid fa-phone"></i> <span>(800) 555-0199</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Open mobile navigation menu"
+              aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
   <div class="mobile-menu" id="mobileMenu">
     <a href="#home" class="mobile-nav-link"><span>Home</span> <i class="fa-solid fa-chevron-right"></i></a>
     <a href="#about" class="mobile-nav-link"><span>About Us</span> <i class="fa-solid fa-chevron-right"></i></a>
@@ -84,9 +77,6 @@
   </div>
 
   <main>
-    <!-- ==========================================================================
-         HERO SECTION
-         ========================================================================== -->
     <section class="hero" id="home">
       <div class="hero-bg-wrapper">
         <img src="assets/images/hero-banner.png" alt="Commercial modular building exterior by Q Modular"
@@ -124,11 +114,6 @@
       </div>
     </section>
 
-
-
-    <!-- ==========================================================================
-         SECTION: ABOUT US (STRICTLY FROM DOC PAGE 1)
-         ========================================================================== -->
     <section class="section about-section" id="about">
       <div class="container">
         <div class="row g-5">
@@ -140,7 +125,8 @@
           </div>
           <div class="col-xs-12 col-lg-6">
             <p class="about-lead-text">
-              <b>Q Modular Sales and Leasing</b> is a <b>woman- and minority-owned modular building</b> company built on
+              <b><span class="brand-q">Q</span> Modular Sales and Leasing</b> is a <b>woman- and minority-owned
+                modular building</b> company built on
               more than <b>30
                 years of combined industry experience</b> in modular building sales, leasing, project development, and
               customer service.
@@ -162,16 +148,7 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         SECTION: OUR COMMITMENT (STRICTLY FROM DOC PAGE 1 & 2)
-         ========================================================================== -->
     <section class="section commitment-section" id="commitment">
-      <div class="commitment-bg-wrapper">
-        <img src="assets/images/commitment-building.jpg" alt="Modular building delivery and crane installation"
-          class="commitment-bg-img" width="1600" height="900" loading="lazy">
-        <!-- <div class="commitment-overlay"></div> -->
-      </div>
-
       <div class="container commitment-container">
         <div class="row justify-content-end align-items-center">
           <div class="col-xs-12 col-md-11 col-lg-7 col-xl-6">
@@ -202,14 +179,11 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         SECTION: WHY Q MODULAR? (STRICTLY THE 7 VALUE CARDS FROM DOC PAGE 1 & 2)
-         ========================================================================== -->
     <section class="section why-q-section" id="why-q-modular">
       <div class="container">
         <div class="section-header center">
           <span class="section-tag">
-            <i class="fa-solid fa-circle-check"></i> Competitive Strengths
+            <i class="fa-solid fa-shield-halved"></i> Competitive Strengths
           </span>
           <h2 class="section-title">Why Q Modular?</h2>
           <p class="section-subtitle">
@@ -217,10 +191,8 @@
           </p>
         </div>
 
-        <!-- The Exact 6 Points from Doc in Alternating Seamless Grid -->
         <div class="why-q-mosaic-wrapper">
           <div class="row g-0 why-q-mosaic-grid">
-            <!-- Card 1 (White) -->
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
               <div class="why-q-card why-q-card-white">
                 <div class="icon-box"><i class="fa-solid fa-clock-rotate-left"></i></div>
@@ -229,7 +201,6 @@
               </div>
             </div>
 
-            <!-- Card 2 (Magenta) -->
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
               <div class="why-q-card why-q-card-magenta">
                 <div class="icon-box"><i class="fa-solid fa-person-dress fa-female"></i></div>
@@ -238,7 +209,6 @@
               </div>
             </div>
 
-            <!-- Card 3 (White) -->
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
               <div class="why-q-card why-q-card-white">
                 <div class="icon-box"><i class="fa-solid fa-handshake-simple"></i></div>
@@ -247,7 +217,6 @@
               </div>
             </div>
 
-            <!-- Card 4 (Magenta) -->
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
               <div class="why-q-card why-q-card-magenta">
                 <div class="icon-box"><i class="fa-solid fa-building-columns"></i></div>
@@ -256,7 +225,6 @@
               </div>
             </div>
 
-            <!-- Card 5 (White) -->
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
               <div class="why-q-card why-q-card-white">
                 <div class="icon-box"><i class="fa-solid fa-headset"></i></div>
@@ -265,7 +233,6 @@
               </div>
             </div>
 
-            <!-- Card 6 (Magenta) -->
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
               <div class="why-q-card why-q-card-magenta">
                 <div class="icon-box"><i class="fa-solid fa-helmet-safety"></i></div>
@@ -278,9 +245,6 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         FULL-WIDTH CALLOUT: MODULAR SOLUTIONS (FROM DOC PAGE 2)
-         ========================================================================== -->
     <section class="why-q-banner-section" aria-label="Modular Solutions Consultation">
       <div class="why-q-banner-bg">
         <img src="assets/images/modular-facility-banner.jpg" alt="Modern modular office complex"
@@ -307,12 +271,12 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         SECTION: OUR TEAM (STRICTLY FROM DOC PAGE 2 & 3)
-         ========================================================================== -->
     <section class="team-mosaic-section" id="our-team">
       <div class="container">
         <div class="team-mosaic-header">
+          <span class="section-tag">
+            <i class="fa-solid fa-people-group"></i> Experienced Leadership
+          </span>
           <h2 class="team-mosaic-title">Our Team</h2>
           <p class="team-mosaic-subtitle">
             Smart Modular Solutions. Experienced Leadership. Exceptional Service.
@@ -321,13 +285,11 @@
 
         <div class="team-mosaic-wrapper">
           <div class="row g-0 team-mosaic-grid">
-            <!-- Cell 1: Photo - Quynh Ward -->
             <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-photo">
               <img src="assets/images/Picture1.png" alt="Quynh Ward – President" class="team-mosaic-img" width="600"
                 height="600" loading="lazy">
             </div>
 
-            <!-- Cell 2: Content - Quynh Ward -->
             <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-content">
               <h3 class="team-mosaic-name">Quynh Ward</h3>
               <div class="team-mosaic-role">president</div>
@@ -341,13 +303,11 @@
               </p>
             </div>
 
-            <!-- Cell 3: Photo - Jeff Ward -->
             <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-photo">
               <img src="assets/images/Picture2.png" alt="Jeff Ward – Chief Operating Officer" class="team-mosaic-img"
                 width="600" height="600" loading="lazy">
             </div>
 
-            <!-- Cell 4: Content - Jeff Ward -->
             <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-content">
               <h3 class="team-mosaic-name">Jeff Ward</h3>
               <div class="team-mosaic-role">chief operating officer</div>
@@ -361,13 +321,11 @@
               </p>
             </div>
 
-            <!-- Cell 5: Photo - Austin Ward -->
             <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-photo">
               <img src="assets/images/austin-ward.jpg" alt="Austin Ward – Director of Design and Estimating"
                 class="team-mosaic-img" width="600" height="600" loading="lazy">
             </div>
 
-            <!-- Cell 6: Content - Austin Ward -->
             <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-content">
               <h3 class="team-mosaic-name">Austin Ward</h3>
               <div class="team-mosaic-role">director of design and estimating</div>
@@ -385,157 +343,135 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         SECTION: WHY MODULAR (STRICTLY FROM DOC PAGE 3 & 4)
-         ========================================================================== -->
     <section class="section why-modular-section" id="why-modular">
       <div class="container">
-        <div class="section-header center">
-          <span class="section-tag">
-            <i class="fa-solid fa-cubes"></i> Industry Insights
-          </span>
-          <h2 class="section-title">Why Modular</h2>
-          <p class="section-subtitle">
-            Off-site building methods engineered for speed, cost predictability, quality, and sustainability.
-          </p>
+        <div class="row g-5">
+          <div class="col-xs-12 col-lg-6">
+            <span class="section-tag">
+              <i class="fa-solid fa-cubes"></i> Industry Insights
+            </span>
+            <h2 class="section-title">Why Modular</h2>
+            <p class="section-subtitle">
+              Off-site building methods engineered for speed, cost predictability, quality, and sustainability.
+            </p>
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <p class="about-lead-text">
+              <b>Modular construction</b> is an off-site building method where the structure is built in separate
+              sections or modules, typically in a manufacturing plant, using a tightly controlled assembly line process.
+              The buildings are designed to the same model building codes and standards and incorporate identical
+              construction materials to those that are used in facilities which are primarily site-built.
+            </p>
+            <p class="about-lead-text">
+              After manufacturing, the modules are transported to the construction site where they are assembled
+              together on an appropriate foundation system yielding a building that is comparable to a site-built
+              structure but is completed in a significantly reduced time frame.
+            </p>
+          </div>
         </div>
 
-        <!-- Technical Explanation from Doc -->
-        <div class="modular-spec-box">
-          <p class="modular-spec-lead">
-            Modular construction is an off-site building method where the structure is built in separate sections or
-            modules, typically in a manufacturing plant, using a tightly controlled assembly line process. The buildings
-            are designed to the same model building codes and standards and incorporate identical construction materials
-            to those that are used in facilities which are primarily site-built.
-          </p>
-
-          <div class="row g-3">
-            <div class="col-xs-12 col-md-4">
-              <div class="spec-chip-item">
-                <i class="fa-solid fa-cubes-stacked"></i>
-                <div>
-                  <div class="spec-chip-label">Structural Framing</div>
-                  <div class="spec-chip-val">Wood (Type V-b) or Steel Framing (Type II-b) with wood or concrete floor
-                  </div>
+        <div class="why-modular-slider-wrapper">
+          <div class="why-modular-slider">
+            <div class="why-modular-slide">
+              <div class="why-modular-slide-card">
+                <div class="why-modular-slide-img-col">
+                  <img src="assets/images/modular-speed.jpg" alt="Speed of Construction modular installation"
+                    class="why-modular-slide-img" width="800" height="600" loading="lazy">
+                </div>
+                <div class="why-modular-slide-text-col">
+                  <h3 class="why-modular-slide-title">Speed of Construction</h3>
+                  <p class="why-modular-slide-desc">
+                    The modular building process provides for a simultaneous overlap of the activities that take place
+                    off-site in the manufacturing plant and on-site while preparing the site for the building
+                    installation. Since the structure is being built in the factory and doesn't wait for the site
+                    preparation to take place or is subjected to weather delays, a permanent or relocatable modular
+                    building can be completed 25–40% faster than the time required for typical site-built methods.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-12 col-md-4">
-              <div class="spec-chip-item">
-                <i class="fa-solid fa-ruler-combined"></i>
-                <div>
-                  <div class="spec-chip-label">Module Dimensions</div>
-                  <div class="spec-chip-val">Typically 10’ to 14’ wide and 30’ to 70’ long for optimal highway transport
-                  </div>
+            <div class="why-modular-slide">
+              <div class="why-modular-slide-card">
+                <div class="why-modular-slide-img-col">
+                  <img src="assets/images/modular-cost.jpg" alt="Cost effective commercial modular building"
+                    class="why-modular-slide-img" width="800" height="600" loading="lazy">
+                </div>
+                <div class="why-modular-slide-text-col">
+                  <h3 class="why-modular-slide-title">Lower Building Costs</h3>
+                  <p class="why-modular-slide-desc">
+                    The modular building process can yield 10–25% lower design and construction costs, and the
+                    compressed
+                    schedule helps reduce the overall project general conditions and financing required. The approach
+                    provides for a more predictable and streamlined process with better coordination to reduce costly
+                    mistakes and material waste. The vertical integration of many modular companies also provides for a
+                    greater degree of value engineering to meet a client's budget on a project.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-12 col-md-4">
-              <div class="spec-chip-item">
-                <i class="fa-solid fa-truck-ramp-box"></i>
-                <div>
-                  <div class="spec-chip-label">Site Assembly</div>
-                  <div class="spec-chip-val">Transported to site and assembled together on an appropriate foundation
-                    system</div>
+            <div class="why-modular-slide">
+              <div class="why-modular-slide-card">
+                <div class="why-modular-slide-img-col">
+                  <img src="assets/images/modular-quality.jpg" alt="Superior quality modular manufacturing inspection"
+                    class="why-modular-slide-img" width="800" height="600" loading="lazy">
+                </div>
+                <div class="why-modular-slide-text-col">
+                  <h3 class="why-modular-slide-title">Superior Construction Quality</h3>
+                  <p class="why-modular-slide-desc">
+                    Modular buildings utilize the same materials and are built to the same codes, standards, and
+                    architectural specifications as site construction methods. Quality improvements are recognized
+                    through
+                    the factory assembly process which leads to greater efficiencies, consistency, and safety, while
+                    established protocols for receiving, rejecting, and storing materials also eliminate issues with
+                    poor
+                    or damaged components. Permanent modular buildings can be designed to match existing structures, and
+                    after installation and finish-out are often indistinguishable from site-built structures.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="why-modular-slide">
+              <div class="why-modular-slide-card">
+                <div class="why-modular-slide-img-col">
+                  <img src="assets/images/modular-sustainability.jpg"
+                    alt="Sustainable green modular building architecture" class="why-modular-slide-img" width="800"
+                    height="600" loading="lazy">
+                </div>
+                <div class="why-modular-slide-text-col">
+                  <h3 class="why-modular-slide-title">Sustainability</h3>
+                  <p class="why-modular-slide-desc">
+                    The use of factory-controlled manufacturing is also a greener process that generates less waste,
+                    reduces on-site disturbances, and allows for tighter control of the entire process. There is less
+                    material waste and greater use of recycling of building materials, and with relocatable buildings
+                    they
+                    can be dismantled and relocated or refurbished for a new or secondary use.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <p class="about-paragraph mt-4 mb-0">
-            After manufacturing, the modules are transported to the construction site where they are assembled together
-            on an appropriate foundation system yielding a building that is comparable to a site-built structure but is
-            completed in a significantly reduced time frame.
-          </p>
-        </div>
-
-        <!-- The 4 Core Sub-Sections from Doc (Page 3 & 4) -->
-        <div class="row g-4">
-          <!-- Pillar 1: Speed of Construction -->
-          <div class="col-xs-12 col-md-6">
-            <div class="pillar-card">
-              <div class="pillar-card-top">
-                <div class="icon-box"><i class="fa-solid fa-bolt-lightning"></i></div>
-                <span class="pillar-badge">25–40% Faster</span>
-              </div>
-              <h3 class="pillar-card-title">Speed of Construction</h3>
-              <p class="pillar-card-desc">
-                The modular building process provides for a simultaneous overlap of the activities that take place
-                off-site in the manufacturing plant and on-site while preparing the site for the building installation.
-                Since the structure is being built in the factory and doesn't wait for the site preparation to take
-                place or is subjected to weather delays, a permanent or relocatable modular building can be completed
-                25-40% faster than the time required for typical site-built methods.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 2: Lower Building Costs -->
-          <div class="col-xs-12 col-md-6">
-            <div class="pillar-card">
-              <div class="pillar-card-top">
-                <div class="icon-box"><i class="fa-solid fa-coins"></i></div>
-                <span class="pillar-badge">10–25% Lower Costs</span>
-              </div>
-              <h3 class="pillar-card-title">Lower Building Costs</h3>
-              <p class="pillar-card-desc">
-                The modular building process can yield 10-25% lower design and construction costs, and the compressed
-                schedule helps reduce the overall project general conditions and financing required. The approach
-                provides for a more predictable and streamlined process with better coordination to reduce costly
-                mistakes and material waste. The vertical integration of many modular companies also provides for a
-                greater degree of value engineering to meet a client's budget on a project.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 3: Superior Construction Quality -->
-          <div class="col-xs-12 col-md-6">
-            <div class="pillar-card">
-              <div class="pillar-card-top">
-                <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-                <span class="pillar-badge">Identical Codes &amp; Specs</span>
-              </div>
-              <h3 class="pillar-card-title">Superior Construction Quality</h3>
-              <p class="pillar-card-desc">
-                Modular buildings utilize the same materials and are built to the same codes, standards, and
-                architectural specifications as site construction methods. Quality improvements are recognized through
-                the factory assembly process which leads to greater efficiencies, consistency, and safety, while
-                established protocols for receiving, rejecting, and storing materials also eliminate issues with poor or
-                damaged components. Permanent modular buildings can be designed to match existing structures, and after
-                installation and finish-out are often indistinguishable from site-built structures.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 4: Sustainability -->
-          <div class="col-xs-12 col-md-6">
-            <div class="pillar-card">
-              <div class="pillar-card-top">
-                <div class="icon-box"><i class="fa-solid fa-leaf"></i></div>
-                <span class="pillar-badge">Greener Manufacturing</span>
-              </div>
-              <h3 class="pillar-card-title">Sustainability</h3>
-              <p class="pillar-card-desc">
-                The use of factory-controlled manufacturing is also a greener process that generates less waste, reduces
-                on-site disturbances, and allows for tighter control of the entire process. There is less material waste
-                and greater use of recycling of building materials, and with relocatable buildings they can be
-                dismantled and relocated or refurbished for a new or secondary use.
-              </p>
+          <div class="slider-controls-wrap">
+            <div class="slider-controls">
+              <button type="button" class="slider-nav-btn slider-prev-btn" aria-label="Previous slide">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button type="button" class="slider-nav-btn slider-next-btn" aria-label="Next slide">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================================
-         SECTION: CONTACT / INQUIRY
-         ========================================================================== -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="row g-5 align-items-center">
-          <!-- Left Column: Context -->
-          <div class="col-xs-12 col-lg-5">
+          <div class="col-xs-12 col-lg-6">
             <div class="contact-info-panel">
               <span class="section-tag">
                 <i class="fa-solid fa-envelope"></i> Contact Us
@@ -573,11 +509,10 @@
             </div>
           </div>
 
-          <!-- Right Column: Interactive Consultation & Quote Form -->
-          <div class="col-xs-12 col-lg-7">
+          <div class="col-xs-12 col-lg-6">
             <div class="inquiry-form-card">
               <form name="quote-form">
-                <h3 class="inquiry-form-title mb-3">
+                <h3 class="inquiry-form-title mb-1">
                   <i class="fa-solid fa-paper-plane text-brand me-2"></i> Request a Proposal or Consultation
                 </h3>
                 <p class="text-muted mb-4 font-14">
@@ -647,19 +582,15 @@
                     <div class="form-group mb-0">
                       <label for="c-message" class="form-label">Project Details &amp; Requirements *</label>
                       <textarea id="c-message" name="message" class="form-textarea"
-                        placeholder="Please describe your facility needs (e.g., single modular office, multi-unit facility, classroom, healthcare or administrative space, approximate dimensions or occupancy requirements)..."
-                        required></textarea>
+                        placeholder="Please describe your facility needs ..." required></textarea>
                     </div>
                   </div>
 
                   <div class="col-xs-12">
-                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 pt-2">
+                    <div class="d-flex align-items-center justify-content-end flex-wrap gap-3 pt-2">
                       <button type="submit" class="btn btn-primary">
                         <i class="fa-solid fa-paper-plane"></i> Submit Request
                       </button>
-                      <div class="form-privacy-note">
-                        <i class="fa-solid fa-lock text-brand"></i> Direct consultation with leadership.
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -671,9 +602,6 @@
     </section>
   </main>
 
-  <!-- ==========================================================================
-       MODAL DIALOG (GET A QUOTE / CONSULTATION)
-       ========================================================================== -->
   <div class="modal-overlay" id="quoteModal" aria-hidden="true" role="dialog" aria-modal="true"
     aria-labelledby="modalTitle">
     <div class="modal-window">
@@ -748,23 +676,18 @@
     </div>
   </div>
 
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="row align-items-center gy-4 footer-3col-row">
-          <!-- Col 1: Logo -->
           <div class="col-xs-12 col-md-2 footer-col-logo">
             <a href="#home" class="footer-logo-link" aria-label="Q Modular Sales and Leasing Home">
-              <img src="assets/images/logo.png" alt="Q Modular Sales and Leasing Logo" class="footer-logo" width="712"
-                height="474" loading="lazy">
+              <img src="assets/images/Q-Modular-LogoWhite-Transparent-07.png" alt="Q Modular Sales and Leasing Logo"
+                class="footer-logo" width="712" height="474" loading="lazy">
             </a>
           </div>
 
-          <!-- Col 2: Menu -->
-          <div class="col-xs-12 col-md-6 footer-col-nav">
+          <div class="col-xs-12 col-md-7 footer-col-nav">
             <nav class="footer-nav-horizontal" aria-label="Footer Navigation">
               <a href="#home" class="footer-nav-item">Home</a>
               <a href="#about" class="footer-nav-item">About Us</a>
@@ -776,15 +699,13 @@
             </nav>
           </div>
 
-          <!-- Col 3: Contact Details -->
-          <div class="col-xs-12 col-md-4 col-lg-4 footer-col-contact">
+          <div class="col-xs-12 col-md-3 footer-col-contact">
             <div class="footer-contact-block">
               <div class="footer-contact-item">
                 <div class="footer-contact-icon">
                   <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="footer-contact-info">
-                  <span class="footer-contact-label">Phone</span>
                   <a href="tel:8005550199" class="footer-contact-val">(800) 555-0199</a>
                 </div>
               </div>
@@ -793,7 +714,6 @@
                   <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="footer-contact-info">
-                  <span class="footer-contact-label">Email</span>
                   <a href="mailto:info@qmodular.com" class="footer-contact-val">info@qmodular.com</a>
                 </div>
               </div>
@@ -802,7 +722,6 @@
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div class="footer-contact-info">
-                  <span class="footer-contact-label">Address</span>
                   <span class="footer-contact-val">1200 Modular Way, Dallas, TX 75201</span>
                 </div>
               </div>
@@ -811,20 +730,23 @@
         </div>
       </div>
 
-      <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div>
           &copy; 2026 Q Modular Sales and Leasing. All rights reserved.
         </div>
         <div>
-          Smart Modular Solutions. Experienced Leadership. Exceptional Service.
+          <a href="#">Privacy Policy</a> . <a href="#">Terms of Use</a> · <span
+            style="display: inline-flex; flex-direction: row;"> Site by <a href="https://www.threevistas.com/"
+              target="_blank" rel="noopener"> <img src="assets/images/download.png" alt="Three Vistas Logo"
+                style="height:17px;margin-left: 8px;opacity: .8;"> </a></span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Main JavaScript File -->
-  <script src="js/main.js"></script>
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
