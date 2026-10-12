@@ -624,39 +624,38 @@
                   <div class="col-xs-12 col-sm-6">
                     <div class="form-group mb-0">
                       <label for="c-name" class="form-label">Full Name *</label>
-                      <input type="text" id="c-name" name="name" class="form-input" placeholder="e.g. Quynh Ward"
-                        required autocomplete="name">
+                      <input type="text" id="c-name" name="name" class="form-input" required autocomplete="name"
+                        data-fs-field>
                     </div>
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
                     <div class="form-group mb-0">
                       <label for="c-org" class="form-label">Company / Institution *</label>
-                      <input type="text" id="c-org" name="organization" class="form-input"
-                        placeholder="e.g. Commercial Enterprise" required autocomplete="organization">
+                      <input type="text" id="c-org" name="organization" class="form-input" required
+                        autocomplete="organization" data-fs-field>
                     </div>
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
                     <div class="form-group mb-0">
                       <label for="c-email" class="form-label">Email Address *</label>
-                      <input type="email" id="c-email" name="email" class="form-input" placeholder="name@company.com"
-                        required autocomplete="email">
+                      <input type="email" id="c-email" name="email" class="form-input" required autocomplete="email"
+                        data-fs-field>
                     </div>
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
                     <div class="form-group mb-0">
                       <label for="c-phone" class="form-label">Phone Number</label>
-                      <input type="tel" id="c-phone" name="phone" class="form-input" placeholder="(Optional)"
-                        autocomplete="tel">
+                      <input type="tel" id="c-phone" name="phone" class="form-input" autocomplete="tel" data-fs-field>
                     </div>
                   </div>
 
                   <div class="col-xs-12 col-sm-6">
                     <div class="form-group mb-0">
-                      <label for="c-service" class="form-label">Solution Type *</label>
-                      <select id="c-service" name="service" class="form-select" required>
+                      <label for="c-service" class="form-label">Solution Type</label>
+                      <select id="c-service" name="service" class="form-select" required data-fs-field>
                         <option value="" disabled selected>Select Solution Type</option>
                         <option value="sales">Modular Building Sales</option>
                         <option value="leasing">Modular Building Leasing</option>
@@ -670,7 +669,7 @@
                   <div class="col-xs-12 col-sm-6">
                     <div class="form-group mb-0">
                       <label for="c-timeline" class="form-label">Project Timeline</label>
-                      <select id="c-timeline" name="timeline" class="form-select">
+                      <select id="c-timeline" name="timeline" class="form-select" data-fs-field>
                         <option value="immediate">Immediate (&lt; 30 Days)</option>
                         <option value="1-3-months" selected>1 – 3 Months</option>
                         <option value="3-6-months">3 – 6 Months</option>
@@ -682,8 +681,7 @@
                   <div class="col-xs-12">
                     <div class="form-group mb-0">
                       <label for="c-message" class="form-label">Project Details &amp; Requirements *</label>
-                      <textarea id="c-message" name="message" class="form-textarea"
-                        placeholder="Please describe your facility needs ..." required></textarea>
+                      <textarea id="c-message" name="message" class="form-textarea" required data-fs-field></textarea>
                     </div>
                   </div>
 
