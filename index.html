@@ -22,25 +22,22 @@
 
 <body>
 
-  <header class="header header-split">
+  <header class="header">
     <div class="container header-container">
       <div class="header-inner">
-        <nav class="nav-desktop nav-desktop-left" aria-label="Left Navigation">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="#about" class="nav-link">About Us</a>
-          <a href="#commitment" class="nav-link">Our Commitment</a>
-          <a href="#why-modular" class="nav-link">Why Modular</a>
-        </nav>
-
-        <a href="#home" class="brand-logo-link brand-logo-center" aria-label="Q Modular Sales and Leasing Home">
-          <img src="assets/images/QModular-Logo-Color-Swapped.png" alt="Q Modular Sales and Leasing" class="brand-logo"
-            width="712" height="474">
+        <a href="#home" class="brand-logo-link" aria-label="Q Modular Sales and Leasing Home">
+          <img src="assets/images/QModularLogo-WhiteTransparent-new.png" alt="Q Modular Sales and Leasing"
+            class="brand-logo" width="712" height="474">
         </a>
 
         <div class="header-right-group">
-          <nav class="nav-desktop nav-desktop-right" aria-label="Right Navigation">
-            <a href="#our-team" class="nav-link">Our Team</a>
+          <nav class="nav-desktop" aria-label="Main Navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#commitment" class="nav-link">Our Commitment</a>
+            <a href="#why-modular" class="nav-link">Why Modular</a>
             <a href="#service" class="nav-link">Our Services</a>
+            <a href="#our-team" class="nav-link">Our Team</a>
             <a href="#contact" class="nav-link">Contact Us</a>
           </nav>
           <div class="header-actions">
@@ -64,9 +61,10 @@
         class="fa-solid fa-chevron-right"></i></a>
     <a href="#why-q-modular" class="mobile-nav-link"><span>Why Q Modular?</span> <i
         class="fa-solid fa-chevron-right"></i></a>
-    <a href="#our-team" class="mobile-nav-link"><span>Our Team</span> <i class="fa-solid fa-chevron-right"></i></a>
     <a href="#why-modular" class="mobile-nav-link"><span>Why Modular</span> <i
         class="fa-solid fa-chevron-right"></i></a>
+    <a href="#service" class="mobile-nav-link"><span>Our Services</span> <i class="fa-solid fa-chevron-right"></i></a>
+    <a href="#our-team" class="mobile-nav-link"><span>Our Team</span> <i class="fa-solid fa-chevron-right"></i></a>
     <a href="#contact" class="mobile-nav-link"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a>
     <a href="tel:8005550199" class="mobile-phone-link">
       <i class="fa-solid fa-phone"></i> <span>(800) 555-0199</span>
@@ -79,8 +77,24 @@
   <main>
     <section class="hero" id="home">
       <div class="hero-bg-wrapper">
-        <img src="assets/images/hero-banner.png" alt="Commercial modular building exterior by Q Modular"
-          class="hero-bg-img" width="1600" height="768" fetchpriority="high">
+        <div class="hero-slider">
+          <div class="hero-slide">
+            <img src="assets/images/hero-image.jpg" alt="Commercial modular building exterior by Q Modular"
+              class="hero-bg-img" width="1902" height="827" fetchpriority="high">
+          </div>
+          <div class="hero-slide">
+            <img src="assets/images/hero-image1.jpg" alt="Modern modular facility exterior" class="hero-bg-img"
+              width="1942" height="809" loading="lazy">
+          </div>
+          <div class="hero-slide">
+            <img src="assets/images/hero-image2.jpg" alt="Commercial modular offices and leasing solutions"
+              class="hero-bg-img" width="1915" height="821" loading="lazy">
+          </div>
+          <div class="hero-slide">
+            <img src="assets/images/hero-image3.jpg" alt="Custom modular commercial development" class="hero-bg-img"
+              width="1864" height="843" loading="lazy">
+          </div>
+        </div>
         <div class="hero-overlay"></div>
       </div>
 
@@ -112,6 +126,8 @@
           </div>
         </div>
       </div>
+
+      <div class="hero-dots-container"></div>
     </section>
 
     <section class="section about-section" id="about">
@@ -192,9 +208,9 @@
         </div>
 
         <div class="why-q-mosaic-wrapper">
-          <div class="row g-0 why-q-mosaic-grid">
+          <div class="row g-3 why-q-mosaic-grid">
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
-              <div class="why-q-card why-q-card-white">
+              <div class="why-q-card">
                 <div class="icon-box"><i class="fa-solid fa-clock-rotate-left"></i></div>
                 <span class="why-q-card-num">01 / EXPERIENCE</span>
                 <h3 class="why-q-card-title">30+ years of modular industry experience</h3>
@@ -202,7 +218,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
-              <div class="why-q-card why-q-card-magenta">
+              <div class="why-q-card">
                 <div class="icon-box"><i class="fa-solid fa-person-dress fa-female"></i></div>
                 <span class="why-q-card-num">02 / LEADERSHIP</span>
                 <h3 class="why-q-card-title">Woman and minority-owned</h3>
@@ -210,7 +226,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
-              <div class="why-q-card why-q-card-white">
+              <div class="why-q-card">
                 <div class="icon-box"><i class="fa-solid fa-handshake-simple"></i></div>
                 <span class="why-q-card-num">03 / SOLUTIONS</span>
                 <h3 class="why-q-card-title">Sales and leasing expertise</h3>
@@ -218,7 +234,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
-              <div class="why-q-card why-q-card-magenta">
+              <div class="why-q-card">
                 <div class="icon-box"><i class="fa-solid fa-building-columns"></i></div>
                 <span class="why-q-card-num">04 / SECTORS</span>
                 <h3 class="why-q-card-title">Commercial and institutional solutions</h3>
@@ -226,7 +242,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
-              <div class="why-q-card why-q-card-white">
+              <div class="why-q-card">
                 <div class="icon-box"><i class="fa-solid fa-headset"></i></div>
                 <span class="why-q-card-num">05 / ADVOCACY</span>
                 <h3 class="why-q-card-title">Responsive, personalized customer service</h3>
@@ -234,7 +250,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-lg-4 why-q-col">
-              <div class="why-q-card why-q-card-magenta">
+              <div class="why-q-card">
                 <div class="icon-box"><i class="fa-solid fa-helmet-safety"></i></div>
                 <span class="why-q-card-num">06 / EXECUTION</span>
                 <h3 class="why-q-card-title">Experienced project and construction coordination</h3>
@@ -247,8 +263,8 @@
 
     <section class="why-q-banner-section" aria-label="Modular Solutions Consultation">
       <div class="why-q-banner-bg">
-        <img src="assets/images/modular-facility-banner.jpg" alt="Modern modular office complex"
-          class="why-q-banner-img" width="1600" height="900" loading="lazy">
+        <img src="assets/images/modular-office-img.jpg" alt="Modern modular office complex" class="why-q-banner-img"
+          width="1600" height="900" loading="lazy">
         <div class="why-q-banner-overlay"></div>
       </div>
       <div class="container why-q-banner-container">
@@ -266,78 +282,6 @@
             <a href="#contact" class="btn btn-hero-primary open-quote-modal">
               <span>Contact Leadership</span> <i class="fa-solid fa-arrow-right"></i>
             </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="team-mosaic-section" id="our-team">
-      <div class="container">
-        <div class="team-mosaic-header">
-          <span class="section-tag">
-            <i class="fa-solid fa-people-group"></i> Experienced Leadership
-          </span>
-          <h2 class="team-mosaic-title">Our Team</h2>
-          <p class="team-mosaic-subtitle">
-            Smart Modular Solutions. Experienced Leadership. Exceptional Service.
-          </p>
-        </div>
-
-        <div class="team-mosaic-wrapper">
-          <div class="row g-0 team-mosaic-grid">
-            <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-photo">
-              <img src="assets/images/Picture1.png" alt="Quynh Ward – President" class="team-mosaic-img" width="600"
-                height="600" loading="lazy">
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-content">
-              <h3 class="team-mosaic-name">Quynh Ward</h3>
-              <div class="team-mosaic-role">president</div>
-              <p class="team-mosaic-bio">
-                Mrs. Ward is a 20 year professional in the design and development of Mixed-Use Commercial/Residential
-                developments throughout Texas. Her “boots on the ground” approach to project management and execution
-                throughout each phase of the project distinguished Quynh as a national leader in mixed use development.
-                From overseeing the design, construction, and subsequent lease up of these developments, Quynh’s
-                exceptional leadership was paramount to the success of these developments. Her business acumen and
-                leadership guide the Q Modular team to success.
-              </p>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-photo">
-              <img src="assets/images/Picture2.png" alt="Jeff Ward – Chief Operating Officer" class="team-mosaic-img"
-                width="600" height="600" loading="lazy">
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-content">
-              <h3 class="team-mosaic-name">Jeff Ward</h3>
-              <div class="team-mosaic-role">chief operating officer</div>
-              <p class="team-mosaic-bio">
-                Mr. Ward has 30 years of modular construction experience both in commercial and residential market
-                segments. Throughout his tenure in the modular construction industry, Jeff has developed millions of
-                square feet of innovative modular buildings across multiple verticals including Federal Government, DOD,
-                Education, State and Local governments. Notable projects include multiple two story permanent modular
-                offices at NNSA Labs, 4 story modular barracks at Joint Sam Houston, and multiple permanent and
-                temporary education facilities across Texas and surrounding states.
-              </p>
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-photo">
-              <img src="assets/images/austin-ward.jpg" alt="Austin Ward – Director of Design and Estimating"
-                class="team-mosaic-img" width="600" height="600" loading="lazy">
-            </div>
-
-            <div class="col-xs-12 col-md-6 col-lg-4 team-cell team-cell-content">
-              <h3 class="team-mosaic-name">Austin Ward</h3>
-              <div class="team-mosaic-role">director of design and estimating</div>
-              <p class="team-mosaic-bio">
-                Austin brings his 5 years of experience in design and estimating in modular manufacturing environments
-                to the Q Modular team. His proficiency with Building Information Modeling (BIM) using the REVIT platform
-                coupled with an acute understanding of the best practices of modular construction helps guarantee the
-                best value solutions for our customers. Maximizing the efficiencies of modular construction and site
-                integration along with his value engineering mindset provides our customers with solutions that meet
-                there programmatic needs, schedule, and budget.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -369,14 +313,18 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section class="section why-modular-slider-section" id="why-modular-benefits">
+      <div class="container">
         <div class="why-modular-slider-wrapper">
           <div class="why-modular-slider">
             <div class="why-modular-slide">
               <div class="why-modular-slide-card">
                 <div class="why-modular-slide-img-col">
-                  <img src="assets/images/modular-speed.jpg" alt="Speed of Construction modular installation"
-                    class="why-modular-slide-img" width="800" height="600" loading="lazy">
+                  <img src="assets/images/Speed-of-Construction.jpg" alt="Speed of Construction modular installation"
+                    class="why-modular-slide-img" width="730" height="477" loading="lazy">
                 </div>
                 <div class="why-modular-slide-text-col">
                   <h3 class="why-modular-slide-title">Speed of Construction</h3>
@@ -394,8 +342,8 @@
             <div class="why-modular-slide">
               <div class="why-modular-slide-card">
                 <div class="why-modular-slide-img-col">
-                  <img src="assets/images/modular-cost.jpg" alt="Cost effective commercial modular building"
-                    class="why-modular-slide-img" width="800" height="600" loading="lazy">
+                  <img src="assets/images/lower-building.jpg" alt="Cost effective commercial modular building"
+                    class="why-modular-slide-img" width="730" height="477" loading="lazy">
                 </div>
                 <div class="why-modular-slide-text-col">
                   <h3 class="why-modular-slide-title">Lower Building Costs</h3>
@@ -414,8 +362,9 @@
             <div class="why-modular-slide">
               <div class="why-modular-slide-card">
                 <div class="why-modular-slide-img-col">
-                  <img src="assets/images/modular-quality.jpg" alt="Superior quality modular manufacturing inspection"
-                    class="why-modular-slide-img" width="800" height="600" loading="lazy">
+                  <img src="assets/images/Superior-Construction-Quality.jpg"
+                    alt="Superior quality modular manufacturing inspection" class="why-modular-slide-img" width="730"
+                    height="477" loading="lazy">
                 </div>
                 <div class="why-modular-slide-text-col">
                   <h3 class="why-modular-slide-title">Superior Construction Quality</h3>
@@ -436,9 +385,8 @@
             <div class="why-modular-slide">
               <div class="why-modular-slide-card">
                 <div class="why-modular-slide-img-col">
-                  <img src="assets/images/modular-sustainability.jpg"
-                    alt="Sustainable green modular building architecture" class="why-modular-slide-img" width="800"
-                    height="600" loading="lazy">
+                  <img src="assets/images/sustainability.jpg" alt="Sustainable green modular building architecture"
+                    class="why-modular-slide-img" width="730" height="477" loading="lazy">
                 </div>
                 <div class="why-modular-slide-text-col">
                   <h3 class="why-modular-slide-title">Sustainability</h3>
@@ -468,6 +416,159 @@
       </div>
     </section>
 
+    <section class="section construction-types-section" id="service">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center construction-types-header">
+          <div class="col-xs-12 col-lg-6">
+            <span class="section-tag">
+              <i class="fa-solid fa-shapes"></i> Modular Solutions
+            </span>
+            <h2 class="section-title">Two Types of Modular Construction</h2>
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <p class="section-subtitle">
+              Whether you need flexible, relocatable swing space or a lasting, code-compliant commercial facility, Q
+              Modular delivers both temporary and permanent construction methods tailored to your timeline and budget.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 construction-cards-row">
+          <!-- Temporary Modular Construction Card -->
+          <div class="col-xs-12 col-lg-6">
+            <div class="construction-card">
+              <div class="construction-card-body">
+                <h3 class="construction-card-title">Temporary Modular Construction</h3>
+                <p class="construction-card-lead">
+                  Designed for speed, relocatability, and operational flexibility without long-term capital commitment.
+                </p>
+                <div class="construction-card-divider"></div>
+                <p class="construction-card-desc">
+                  Temporary modular buildings—commonly referred to as relocatable buildings—are engineered to be
+                  deployed, occupied, and subsequently moved or reconfigured as your organizational needs change. This
+                  approach is ideal for businesses and institutions requiring immediate space with flexible leasing or
+                  purchase options.
+                </p>
+                <ul class="construction-features-list">
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Rapid Deployment:</strong> Fabricated
+                      off-site and installed up to 40% faster than site-built structures.</span></li>
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Flexible Financing:</strong> Accessible
+                      through customized short- or long-term lease, rental, or purchase agreements.</span></li>
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Relocatable &amp; Reusable:</strong> Can be
+                      dismantled, relocated, or refurbished for secondary applications with minimal site impact.</span>
+                  </li>
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Common Uses:</strong> Jobsite field
+                      offices, modular classrooms, swing spaces, emergency clinics, and temporary sales centers.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Permanent Modular Construction Card -->
+          <div class="col-xs-12 col-lg-6">
+            <div class="construction-card">
+              <div class="construction-card-body">
+                <h3 class="construction-card-title">Permanent Modular Construction</h3>
+                <p class="construction-card-lead">
+                  Engineered to identical commercial building codes, delivering permanent asset value on an accelerated
+                  schedule.
+                </p>
+                <div class="construction-card-divider"></div>
+                <p class="construction-card-desc">
+                  Permanent Modular Construction (PMC) is an innovative building method where factory-assembled
+                  volumetric modules are set onto a permanent foundation. Once completed, permanent modular buildings
+                  are indistinguishable from site-built real estate, delivering decades of durability, architectural
+                  beauty, and energy efficiency.
+                </p>
+                <ul class="construction-features-list">
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Full Code Compliance:</strong> Built to the
+                      International Building Code (IBC) and all applicable state and local commercial codes.</span></li>
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>True Capital Asset:</strong> Designed for a
+                      50+ year service life, offering identical appraisal and depreciation benefits.</span></li>
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Architectural Freedom:</strong> Multi-story
+                      capabilities with custom brick, glass, stucco, and architectural panel facades.</span></li>
+                  <li><i class="fa-solid fa-circle-check"></i> <span><strong>Common Uses:</strong> Multi-story
+                      commercial offices, healthcare facilities, schools, government complexes, and banks.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team-mosaic-section" id="our-team">
+      <div class="container">
+        <div class="team-mosaic-header">
+          <span class="section-tag">
+            <i class="fa-solid fa-people-group"></i> Experienced Leadership
+          </span>
+          <h2 class="team-mosaic-title">Our Team</h2>
+          <p class="team-mosaic-subtitle">
+            Smart Modular Solutions. Experienced Leadership. Exceptional Service.
+          </p>
+        </div>
+
+        <div class="team-cards-wrapper">
+          <div class="team-card">
+            <div class="team-card-photo">
+              <img src="assets/images/Picture1.png" alt="Quynh Ward – President" class="team-card-img" width="247"
+                height="317" loading="lazy">
+            </div>
+            <div class="team-card-content">
+              <h3 class="team-card-name">Quynh Ward</h3>
+              <div class="team-card-role">President</div>
+              <p class="team-card-bio">
+                Mrs. Ward is a 20 year professional in the design and development of Mixed-Use Commercial/Residential
+                developments throughout Texas. Her “boots on the ground” approach to project management and execution
+                throughout each phase of the project distinguished Quynh as a national leader in mixed use development.
+                From overseeing the design, construction, and subsequent lease up of these developments, Quynh’s
+                exceptional leadership was paramount to the success of these developments. Her business acumen and
+                leadership guide the Q Modular team to success.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-photo">
+              <img src="assets/images/Picture2.png" alt="Jeff Ward – Chief Operating Officer" class="team-card-img"
+                width="254" height="315" loading="lazy">
+            </div>
+            <div class="team-card-content">
+              <h3 class="team-card-name">Jeff Ward</h3>
+              <div class="team-card-role">Chief Operating Officer</div>
+              <p class="team-card-bio">
+                Mr. Ward has 30 years of modular construction experience both in commercial and residential market
+                segments. Throughout his tenure in the modular construction industry, Jeff has developed millions of
+                square feet of innovative modular buildings across multiple verticals including Federal Government, DOD,
+                Education, State and Local governments. Notable projects include multiple two story permanent modular
+                offices at NNSA Labs, 4 story modular barracks at Joint Sam Houston, and multiple permanent and
+                temporary education facilities across Texas and surrounding states.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-photo">
+              <img src="assets/images/austin-ward.jpg" alt="Austin Ward – Director of Design and Estimating"
+                class="team-card-img" width="1024" height="1024" loading="lazy">
+            </div>
+            <div class="team-card-content">
+              <h3 class="team-card-name">Austin Ward</h3>
+              <div class="team-card-role">Director of Design and Estimating</div>
+              <p class="team-card-bio">
+                Austin brings his 5 years of experience in design and estimating in modular manufacturing environments
+                to the Q Modular team. His proficiency with Building Information Modeling (BIM) using the REVIT platform
+                coupled with an acute understanding of the best practices of modular construction helps guarantee the
+                best value solutions for our customers. Maximizing the efficiencies of modular construction and site
+                integration along with his value engineering mindset provides our customers with solutions that meet
+                there programmatic needs, schedule, and budget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="row g-5 align-items-center">
@@ -682,8 +783,8 @@
         <div class="row align-items-center gy-4 footer-3col-row">
           <div class="col-xs-12 col-md-2 footer-col-logo">
             <a href="#home" class="footer-logo-link" aria-label="Q Modular Sales and Leasing Home">
-              <img src="assets/images/Q-Modular-LogoWhite-Transparent-07.png" alt="Q Modular Sales and Leasing Logo"
-                class="footer-logo" width="712" height="474" loading="lazy">
+              <img src="assets/images/QModular-Logo-Color-Swapped.png" alt="Q Modular Sales and Leasing Logo"
+                class="footer-logo" width="1423" height="1348" loading="lazy">
             </a>
           </div>
 
@@ -695,6 +796,7 @@
               <a href="#why-q-modular" class="footer-nav-item">Why Q Modular?</a>
               <a href="#our-team" class="footer-nav-item">Our Team</a>
               <a href="#why-modular" class="footer-nav-item">Why Modular</a>
+              <a href="#service" class="footer-nav-item">Our Services</a>
               <a href="#contact" class="footer-nav-item">Contact</a>
             </nav>
           </div>

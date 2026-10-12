@@ -1,9 +1,3 @@
-/**
- * Q MODULAR SALES AND LEASING
- * Main JavaScript Controller
- * Clean DOM manipulation without inline style injections
- */
-
 const initApp = () => {
   // Elements
   const header = document.querySelector('.header');
@@ -170,6 +164,29 @@ const initApp = () => {
       $(document).on('click', '.slider-next-btn', function (e) {
         e.preventDefault();
         $('.why-modular-slider').slick('slickNext');
+      });
+    }
+
+    // 7. Hero Banner Slick Slider (Auto slide with 4 hero images)
+    const $heroSlider = $('.hero-slider');
+    if ($heroSlider.length) {
+      $heroSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4500,
+        speed: 800,
+        infinite: true,
+        fade: false,
+        dots: true,
+        appendDots: $('.hero-dots-container'),
+        arrows: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        draggable: false,
+        swipe: true,
+        touchMove: true,
+        adaptiveHeight: false
       });
     }
   }
