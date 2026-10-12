@@ -2561,11 +2561,11 @@ textarea {
 .form-select,
 .form-textarea {
   width: 100%;
-  padding: 0.85rem 1.1rem;
+  padding: 10px 15px;
   font-size: 15px;
   color: var(--color-slate-800);
   background-color: var(--color-slate-50);
-  border: 1.5px solid var(--color-slate-200);
+  border: 1px solid #666;
   border-radius: var(--radius-sm);
   transition: var(--transition-fast);
 }
