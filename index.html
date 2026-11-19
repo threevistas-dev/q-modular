@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MR35DXJ6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MR35DXJ6');</script>
+  <!-- End Google Tag Manager -->
 
   <title>Q Modular Sales and Leasing | Smart Modular Solutions. Experienced Leadership. Exceptional Service.</title>
   <meta name="description"
@@ -32,6 +32,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR35DXJ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <header class="header">
     <div class="container header-container">
@@ -768,7 +772,21 @@
   </footer>
   <script>
     window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-    formspree('initForm', { formElement: '#qmodular-form', formId: 'xdeadvob' });
+    formspree('initForm', {
+      formElement: '#qmodular-form',
+      formId: 'xdeadvob',
+      onSuccess: function (data) {
+        if (data && data.form) {
+          data.form.reset();
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'form_submission',
+          form_id: 'qmodular-form',
+          form_name: 'Proposal Consultation Form'
+        });
+      }
+    });
   </script>
   <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   <script src="./assets/js/jquery-3.7.1.min.js"></script>
